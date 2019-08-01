@@ -1,0 +1,21 @@
+<h2 style="text-align: center">{{contentTitle}}</h2>
+<div>
+  <table id="student">
+    <tr>
+      <th>Sr. No.</th>
+      <th>FirstName</th>
+      <th>LastName </th>
+      <th>Email</th>
+      <th>Contact</th>
+      <th>Course</th>
+    </tr>
+    <tr *ngFor="let p of studentList; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{p.firstName}}</td>
+      <td>{{p.lastName}}</td>
+      <td>{{p.email}}</td>
+      <td>{{p.contact}}</td>
+      <td>{{p.course}}</td>
+    </tr>
+  </table>
+</div>

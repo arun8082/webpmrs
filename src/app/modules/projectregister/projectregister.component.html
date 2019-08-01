@@ -1,0 +1,75 @@
+
+        <form [formGroup]="ProjectForm" autocomplete="off" novalidate layout-align="center">
+
+                <mat-card class="project">
+                        <mat-card-header style="justify-content: center; padding:2%">
+                                <mat-card-title><b>Please Enter Project Details</b></mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                                <mat-form-field>
+                                        <input matInput placeholder="Project Title" formControlName="projectTitle">
+                                        <mat-error *ngIf="hasError('projectTitle', 'required')">Project title is
+                                                required
+                                        </mat-error>
+                                        <mat-error *ngIf="hasError('projectTitle', 'maxlength')">You have more than 100
+                                                characters
+                                        </mat-error>
+                                </mat-form-field>
+                        </mat-card-content>
+                        <mat-card-content>
+                                <mat-form-field>
+                                        <textarea matInput placeholder="Project Description"
+                                                formControlName="projectDescription"></textarea>
+                                        <mat-error *ngIf="hasError('projectDescription', 'required')">Project Description is
+                                                required
+                                        </mat-error>
+                                        <mat-error *ngIf="hasError('projectDescription', 'maxlength')">You have more than 500
+                                                characters
+                                        </mat-error>
+                                </mat-form-field>
+                        </mat-card-content>
+
+                        <mat-card-content>
+                                <mat-form-field>
+                                        <textarea matInput placeholder="Project Technology"
+                                                formControlName="projectTechnology"></textarea>
+                                        <mat-error *ngIf="hasError('projectTechnology', 'required')">Project Technology
+                                                required
+                                        </mat-error>
+                                        <mat-error *ngIf="hasError('projectTechnology', 'maxlength')">You have more than 200
+                                                characters
+                                        </mat-error>
+                                </mat-form-field>
+                        </mat-card-content>
+                        <mat-card-content>
+                                <mat-form-field>
+                                        <textarea matInput placeholder="Hardware Requirement"
+                                                formControlName="projectHWRequire"></textarea>
+
+                                </mat-form-field>
+                        </mat-card-content>
+                        <mat-card-content>
+                                <mat-form-field>
+                                        <textarea matInput placeholder="Software Requirement"
+                                                formControlName="projectSWRequire"></textarea>
+
+
+                                </mat-form-field>
+                        </mat-card-content>
+                        <mat-card-content>
+                                <mat-form-field>
+                                        <mat-hint>e.g. Windows,Unix,linux</mat-hint>
+                                        <textarea matInput placeholder="Project Platform"
+                                                formControlName="projectPlatform"></textarea>
+
+
+                                </mat-form-field>
+                        </mat-card-content>
+                        <mat-card-actions>
+                                <button type="button" mat-raised-button (click)="createProject(ProjectForm.value)" color="primary">Submit</button>
+                                <button type="button" mat-raised-button (click)="resetProject(ProjectForm.value)" style="background-color: red; color: snow">Cancel</button>
+                                <p style="color: green">{{successMsg}}</p>
+                        </mat-card-actions>
+                </mat-card>
+
+        </form>

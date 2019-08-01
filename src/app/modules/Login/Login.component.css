@@ -1,0 +1,15 @@
+
+mat-form-field {
+
+    width: 300px;
+
+}
+
+.loginform
+{
+    text-align: center;
+}
+
+mat-card {
+  min-height: 600px;
+}

@@ -1,0 +1,39 @@
+<!-----Creating student list table----->
+<h2 style="text-align: center">Student List</h2>
+<div >
+        <table class="table">
+                <tr>
+                        <th>Sr.</th>
+                        <th>FirstName
+                        </th>
+                        <th>LastName
+                        </th>
+                        <th>Contact
+                        </th>
+                        <th>Email
+                        </th>
+                        <th>Course
+                        </th>
+                        <th>Action</th>
+                </tr>
+                <tr *ngIf="flagTable">
+                        <td colspan="5" style="text-align: center">{{error}}</td>
+                </tr>
+                <tr *ngFor="let s of list;let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{s.firstName}}</td>
+                        <td>{{s.lastName}}</td>
+                        <td>{{s.contact}}</td>
+                        <td>{{s.email}}</td>
+                        <td>{{s.studentCourseID}}</td>
+                        <td><a style="color:dodgerblue"><span (click)="onUpdate(s)">Edit</span></a></td>
+                </tr>
+
+        </table>
+</div>
+
+
+
+<!--link to add new student-->
+
+<a routerLink="/studentRegister" style="color:dodgerblue">Register Student</a>

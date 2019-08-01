@@ -1,0 +1,30 @@
+<html>
+<body>
+    <h2 style="text-align: center">{{contentTitle}}</h2>
+<div>
+    <table id="project">
+      <tr>
+          <th>S.No</th>
+          <th>Project Title</th>
+          <th>Project Description</th>
+          <th>Project Technology</th>
+          <th>Software Requirements</th>
+          <th>Hardware Requirements</th>
+          <th>Action</th>
+
+      </tr>
+      <tr *ngFor="let i of projectList; let in=index">
+          <td>{{in+1}}</td>
+          <td>{{i.projectTitle}}</td>
+          <td>{{i.projectDescription}}</td>
+          <td>{{i.projectTechnology}}</td>
+          <td>{{i.projectSWRequire}}</td>
+          <td>{{i.projectHWRequire}}</td>
+          <td><a style="color:dodgerblue"><button (click)="onUpload()">DocumentUpload</button></a></td>
+</tr>
+
+    </table>
+    </div>
+
+    </body>
+    </html>
