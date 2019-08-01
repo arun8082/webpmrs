@@ -10,7 +10,6 @@ import { StudentListComponent } from './modules/student-list/student-list.compon
 import { MentorlistComponent } from './modules/mentorlist/mentorlist.component';
 import { StudentdashboardComponent } from './modules/StudentDashboard/studentdashboard.component';
 import { MentordashboardComponent } from './modules/mentordashboard/mentordashboard.component';
-import { ContactusComponent } from './modules/contactus/contactus.component';
 import { ProjectregisterComponent } from './modules/projectregister/projectregister.component';
 import { StudentRegisterComponent } from './modules/student-register/student-register.component';
 import { AddmentorComponent } from './modules/AddMentor/addmentor.component';
@@ -21,6 +20,7 @@ import { MentorStudentListComponent } from './modules/mentorStudentList/mentorSt
 import { VerifyDocumentsComponent } from './modules/verify-documents/verify-documents.component';
 import { HomeComponent } from './modules/home/home.component';
 import { LogoutComponent } from './shared/logout/logout.component';
+import { ContactusComponent } from './modules/contactus/contactus.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
