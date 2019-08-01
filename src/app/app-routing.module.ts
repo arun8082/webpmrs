@@ -20,7 +20,6 @@ import { MentorStudentListComponent } from './modules/mentorStudentList/mentorSt
 import { VerifyDocumentsComponent } from './modules/verify-documents/verify-documents.component';
 import { HomeComponent } from './modules/home/home.component';
 import { LogoutComponent } from './shared/logout/logout.component';
-import { ContactusComponent } from './modules/contactus/contactus.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -38,7 +37,6 @@ const routes: Routes = [
   {path:"studentRegister",component:StudentRegisterComponent},
   {path:"studentdash",component:StudentdashboardComponent},
   {path:"mentordash",component:MentordashboardComponent},
-  {path:"contactus",component:ContactusComponent},
   {path:"mentor-register",component:AddmentorComponent},
   {path:"studentprojInfo",component:StudentprojinfoComponent},
   {path:"mentorprojlist",component:MentorProjectListComponent},
