@@ -20,6 +20,7 @@ import { AdmindashboardComponent } from './modules/admindashboard/admindashboard
 import { StudentListComponent } from './modules/student-list/student-list.component';
 import { MentorlistComponent } from './modules/mentorlist/mentorlist.component';
 import { StudentdashboardComponent } from './modules/StudentDashboard/studentdashboard.component';
+import { ContactusComponent } from './modules/contactus/contactus.component';
 import { ProjectregisterComponent } from './modules/projectregister/projectregister.component';
 import { StudentRegisterComponent } from './modules/student-register/student-register.component';
 import { MentordashboardComponent } from './modules/mentordashboard/mentordashboard.component';
@@ -52,6 +53,7 @@ import { HeaderComponent } from './shared/header/header.component';
     StudentRegisterComponent,
     StudentdashboardComponent,
     MentordashboardComponent,
+    ContactusComponent,
     AddmentorComponent,
     ProjectrepositoryComponent,
     StudentprojinfoComponent,
